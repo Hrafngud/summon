@@ -23,13 +23,13 @@ git clone https://github.com/Hrafngud/summon.git
 
 # Copy to scripts directory
 mkdir -p ~/scripts
-cp summon/summon ~/scripts/
-chmod +x ~/scripts/summon
+cp summon/.summon.sh ~/scripts/
+chmod +x ~/scripts/.summon.sh
 
 # Add alias to your shell configuration
-echo 'alias summon="~/scripts/summon"' >> ~/.zshrc
+echo 'alias summon="~/scripts/.summon.sh"' >> ~/.zshrc
 # OR for bash users:
-echo 'alias summon="~/scripts/summon"' >> ~/.bashrc
+echo 'alias summon="~/scripts/.summon.sh"' >> ~/.bashrc
 
 # Reload shell configuration
 source ~/.zshrc
@@ -41,11 +41,11 @@ source ~/.bashrc
 
 ```bash
 # Download directly
-curl -o ~/scripts/summon https://raw.githubusercontent.com/Hrafngud/summon/main/summon
-chmod +x ~/scripts/summon
+curl -o ~/scripts/.summon.sh https://raw.githubusercontent.com/Hrafngud/summon/main/.summon.sh
+chmod +x ~/scripts/.summon.sh
 
 # Add alias
-echo 'alias summon="~/scripts/summon"' >> ~/.zshrc
+echo 'alias summon="~/scripts/.summon.sh"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -123,7 +123,7 @@ alias ll="exa -lah --git"        # Enhanced file listing
 
 If you encounter issues:
 
-1. **Permission Denied**: Ensure the script has execute permissions with `chmod +x ~/scripts/summon`
+1. **Permission Denied**: Ensure the script has execute permissions with `chmod +x ~/scripts/.summon.sh`
 2. **Package Manager Not Found**: Verify you're running on a supported distribution
 3. **Network Issues**: Check your internet connection for downloading packages
 4. **Sudo Requirements**: The script requires sudo privileges for package installation
